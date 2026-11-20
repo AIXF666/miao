@@ -1,0 +1,137 @@
+{
+  "Python": [
+    "python3",
+    "languages/python/miao.py"
+  ],
+  "JavaScript": [
+    "node",
+    "languages/javascript/miao.js"
+  ],
+  "Bash": [
+    "bash",
+    "languages/bash/miao.sh"
+  ],
+  "Ruby": [
+    "ruby",
+    "languages/ruby/miao.rb"
+  ],
+  "Go": [
+    "go",
+    "run",
+    "languages/go/miao.go"
+  ],
+  "perl": [
+    "perl",
+    "languages/perl/miao.pl"
+  ],
+  "swift": [
+    "swift",
+    "languages/swift/miao.swift"
+  ],
+  "java": [
+    "java",
+    "languages/java/Miao.java"
+  ],
+  "awk": [
+    "awk",
+    "-f",
+    "languages/awk/miao.awk"
+  ],
+  "tcl": [
+    "tclsh",
+    "languages/tcl/miao.tcl"
+  ],
+  "php": [
+    "php",
+    "languages/php/miao.php"
+  ],
+  "lua": [
+    "lua",
+    "languages/lua/miao.lua"
+  ],
+  "python2": [
+    "python2",
+    "languages/python2/miao.py"
+  ],
+  "kotlin": [
+    "kotlinc",
+    "-script",
+    "languages/kotlin/miao.kts"
+  ],
+  "r": [
+    "Rscript",
+    "languages/r/miao.R"
+  ],
+  "julia": [
+    "julia",
+    "languages/julia/miao.jl"
+  ],
+  "elixir": [
+    "elixir",
+    "languages/elixir/miao.exs"
+  ],
+  "clojure": [
+    "clojure",
+    "languages/clojure/miao.clj"
+  ],
+  "powershell": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "languages/powershell/miao.ps1"
+  ],
+  "dart": [
+    "dart",
+    "languages/dart/miao.dart"
+  ],
+  "groovy": [
+    "groovy",
+    "languages/groovy/miao.groovy"
+  ],
+  "haskell": [
+    "runghc",
+    "languages/haskell/miao.hs"
+  ],
+  "ocaml": [
+    "ocaml",
+    "languages/ocaml/miao.ml"
+  ],
+  "javascript-deno": [
+    "deno",
+    "run",
+    "languages/javascript-deno/miao.ts"
+  ],
+  "fish": [
+    "fish",
+    "languages/fish/miao.fish"
+  ],
+  "zsh": [
+    "zsh",
+    "languages/zsh/miao.zsh"
+  ],
+  "common-lisp": [
+    "sbcl",
+    "--script",
+    "languages/common-lisp/miao.lisp"
+  ],
+  "scheme": [
+    "guile",
+    "-s",
+    "languages/scheme/miao.scm"
+  ],
+  "crystal": [
+    "crystal",
+    "run",
+    "languages/crystal/miao.cr"
+  ],
+  "nim": [
+    "nim",
+    "r",
+    "--hints:off",
+    "languages/nim/miao.nim"
+  ],
+  "typescript": [
+    "bun",
+    "languages/typescript/miao.ts"
+  ]
+}
