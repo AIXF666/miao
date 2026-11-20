@@ -82,6 +82,21 @@ Run a program from the repository root. Runtime versions may affect availability
 | haxe | `haxe -cp languages/haxe -main Miao --interp` |
 | icon | `icont -o /tmp/miao languages/icon/miao.icn && /tmp/miao` |
 
+
+### More examples
+
+| Language / runtime | Command |
+| --- | --- |
+| newlisp | `newlisp languages/newlisp/miao.lsp` |
+| make | `make -s -f languages/make/miao.mk` |
+| cmake | `cmake -P languages/cmake/miao.cmake` |
+| bc | `bc -q languages/bc/miao.bc` |
+| vimscript | `vim -Nu NONE -n -es -S languages/vimscript/miao.vim` |
+| emacs-lisp | `emacs --batch -Q -l languages/emacs-lisp/miao.el` |
+| scala3 | `scala-cli run languages/scala3/miao.scala` |
+| Brainfuck | Run `languages/brainfuck/miao.bf` with an 8-bit-cell Brainfuck interpreter. |
+| x86-64 Linux assembly | `as languages/assembly-x86-64-linux/miao.s -o /tmp/miao.o && ld /tmp/miao.o -o /tmp/miao && /tmp/miao` |
+
 ## Verification
 
 Run `python3 scripts/verify.py`. It compares the exact bytes for both Markdown files and every configured program whose runtime is installed. Missing runtimes are reported as skipped. Entries without commands in `scripts/commands.json` and the compiled-language checks in the script need manual verification.

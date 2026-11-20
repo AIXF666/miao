@@ -216,5 +216,46 @@
   "hy": [
     "hy",
     "languages/hy/miao.hy"
+  ],
+  "newlisp": [
+    "newlisp",
+    "languages/newlisp/miao.lsp"
+  ],
+  "make": [
+    "make",
+    "-s",
+    "-f",
+    "languages/make/miao.mk"
+  ],
+  "cmake": [
+    "cmake",
+    "-P",
+    "languages/cmake/miao.cmake"
+  ],
+  "bc": [
+    "bc",
+    "-q",
+    "languages/bc/miao.bc"
+  ],
+  "vimscript": [
+    "vim",
+    "-Nu",
+    "NONE",
+    "-n",
+    "-es",
+    "-S",
+    "languages/vimscript/miao.vim"
+  ],
+  "emacs-lisp": [
+    "emacs",
+    "--batch",
+    "-Q",
+    "-l",
+    "languages/emacs-lisp/miao.el"
+  ],
+  "scala3": [
+    "scala-cli",
+    "run",
+    "languages/scala3/miao.scala"
   ]
 }
