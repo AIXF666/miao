@@ -117,10 +117,22 @@ Run a program from the repository root. Runtime versions may affect availability
 | wren | `wren_cli languages/wren/miao.wren` |
 | jinja | `Render languages/jinja/miao.jinja with a Jinja environment without adding a newline.` |
 
+
+### Additional distinct languages
+
+| Language | Command |
+| --- | --- |
+| sql | `sqlite3 -noheader -newline '' :memory: '.read languages/sql/miao.sql'` |
+| xslt | `xsltproc languages/xslt/miao.xsl languages/xslt/input.xml` |
+| m4 | `m4 languages/m4/miao.m4` |
+| fennel | `fennel languages/fennel/miao.fnl` |
+| rebol | `rebol -qs languages/rebol/miao.reb` |
+| xquery | `basex -sindent=no languages/xquery/miao.xq` |
+
 ## Verification
 
 Run `python3 scripts/verify.py`. It compares the exact bytes for both Markdown files and every configured program whose runtime is installed. Missing runtimes are reported as skipped. Entries without commands in `scripts/commands.json` and the compiled-language checks in the script need manual verification.
 
 ## Contributing
 
-Add a directory under `languages/`, include a source file and its run command above, and output exactly 10,000 `喵` characters encoded as UTF-8. Add the command to `scripts/commands.json` when possible. Pull requests for more languages are welcome! 🐾
+Add a directory under `languages/` for a language that is not already represented; include a source file and its run command above, and output exactly 10,000 `喵` characters encoded as UTF-8. Add the command to `scripts/commands.json` when possible. Pull requests for more languages are welcome! 🐾

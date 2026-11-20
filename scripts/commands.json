@@ -297,5 +297,36 @@
   "wren": [
     "wren_cli",
     "languages/wren/miao.wren"
+  ],
+  "sql": [
+    "sqlite3",
+    "-noheader",
+    "-newline",
+    "",
+    ":memory:",
+    ".read languages/sql/miao.sql"
+  ],
+  "xslt": [
+    "xsltproc",
+    "languages/xslt/miao.xsl",
+    "languages/xslt/input.xml"
+  ],
+  "m4": [
+    "m4",
+    "languages/m4/miao.m4"
+  ],
+  "fennel": [
+    "fennel",
+    "languages/fennel/miao.fnl"
+  ],
+  "rebol": [
+    "rebol",
+    "-qs",
+    "languages/rebol/miao.reb"
+  ],
+  "xquery": [
+    "basex",
+    "-sindent=no",
+    "languages/xquery/miao.xq"
   ]
 }
