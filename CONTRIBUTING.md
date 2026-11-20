@@ -97,6 +97,26 @@ Run a program from the repository root. Runtime versions may affect availability
 | Brainfuck | Run `languages/brainfuck/miao.bf` with an 8-bit-cell Brainfuck interpreter. |
 | x86-64 Linux assembly | `as languages/assembly-x86-64-linux/miao.s -o /tmp/miao.o && ld /tmp/miao.o -o /tmp/miao && /tmp/miao` |
 
+
+### Further examples
+
+| Language / runtime | Command |
+| --- | --- |
+| forth | `gforth languages/forth/miao.fs` |
+| postscript | `gs -q -dNODISPLAY -dBATCH languages/postscript/miao.ps` |
+| io | `io languages/io/miao.io` |
+| mercury | `mmc --make miao (from languages/mercury; run the resulting executable)` |
+| freebasic | `fbc languages/freebasic/miao.bas -x /tmp/miao && /tmp/miao` |
+| yabasic | `yabasic languages/yabasic/miao.yab` |
+| clojurescript | `nbb languages/clojurescript/miao.cljs` |
+| ksh | `ksh languages/ksh/miao.ksh` |
+| csh | `csh languages/csh/miao.csh` |
+| llvm-ir | `clang languages/llvm-ir/miao.ll -o /tmp/miao && /tmp/miao` |
+| objective-cpp | `clang++ languages/objective-cpp/miao.mm -o /tmp/miao && /tmp/miao` |
+| lean4 | `lean --run languages/lean4/Main.lean` |
+| wren | `wren_cli languages/wren/miao.wren` |
+| jinja | `Render languages/jinja/miao.jinja with a Jinja environment without adding a newline.` |
+
 ## Verification
 
 Run `python3 scripts/verify.py`. It compares the exact bytes for both Markdown files and every configured program whose runtime is installed. Missing runtimes are reported as skipped. Entries without commands in `scripts/commands.json` and the compiled-language checks in the script need manual verification.

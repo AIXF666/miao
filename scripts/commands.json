@@ -257,5 +257,45 @@
     "scala-cli",
     "run",
     "languages/scala3/miao.scala"
+  ],
+  "forth": [
+    "gforth",
+    "languages/forth/miao.fs"
+  ],
+  "postscript": [
+    "gs",
+    "-q",
+    "-dNODISPLAY",
+    "-dBATCH",
+    "languages/postscript/miao.ps"
+  ],
+  "io": [
+    "io",
+    "languages/io/miao.io"
+  ],
+  "yabasic": [
+    "yabasic",
+    "languages/yabasic/miao.yab"
+  ],
+  "clojurescript": [
+    "nbb",
+    "languages/clojurescript/miao.cljs"
+  ],
+  "ksh": [
+    "ksh",
+    "languages/ksh/miao.ksh"
+  ],
+  "csh": [
+    "csh",
+    "languages/csh/miao.csh"
+  ],
+  "lean4": [
+    "lean",
+    "--run",
+    "languages/lean4/Main.lean"
+  ],
+  "wren": [
+    "wren_cli",
+    "languages/wren/miao.wren"
   ]
 }
